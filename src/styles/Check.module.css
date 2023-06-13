@@ -1,0 +1,102 @@
+.check {
+    max-width: 888px;
+    width: 100%;
+    height: 937px;
+    padding: 200px 70px 39px 70px;
+    display: flex;
+    flex-direction: column;    
+    font-family: 'Gilroy';
+    font-style: normal;
+    
+    color: #34343E;
+}
+.output {
+    width: 100%;
+    padding: 4px;
+    background: #AEAEB2;
+    border: 1px solid #85858B;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.output > * {
+    width: 100%;
+    height: 6px;
+    background: #85858B;
+    border: 1px solid #85858B;
+    border-radius: 4px;
+}
+
+.check > .checkTicketInner {
+    z-index: 1;
+    overflow: hidden;
+    margin: -8px 0 0;
+    height: auto;
+    -webkit-filter: drop-shadow(0px 10px 30px #34343E26) drop-shadow(0px 4px 10px #34343E4D); 
+    filter: drop-shadow(0px 10px 30px #34343E26) drop-shadow(0px 4px 10px #34343E4D);    
+}
+.checkTicket {
+    margin: 0 20px;
+    background: linear-gradient(180deg, #E8E8E8 0%, #FFFFFF 8.21%, #FFFFFF 53.72%, #E8E8E8 93.1%);
+    border: 1px solid #EBEBEC;
+    border-radius: 0 0 2px 2px;
+    width: calc(100% - 40px);
+    transition: margin-top 2s 1s;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 96.875%, 96.875% 100%, 
+                                       93.75% 96.875%, 90.625% 100%, 
+                                       87.5% 96.875%, 84.375% 100%, 
+                                       81.25% 96.875%, 78.125% 100%, 
+                                       75% 96.875%, 71.875% 100%, 
+                                       68.75% 96.875%, 65.625% 100%, 
+                                       62.5% 96.875%, 59.375% 100%, 
+                                       56.25% 96.875%, 53.125% 100%, 
+                                       50% 96.875%, 46.875% 100%, 
+                                       43.75% 96.875%, 40.625% 100%, 
+                                       37.5% 96.875%, 34.375% 100%, 
+                                       31.25% 96.875%, 28.125% 100%, 
+                                       25% 96.875%, 21.875% 100%, 
+                                       18.75% 96.875%, 15.625% 100%, 
+                                       12.5% 96.875%, 9.375% 100%, 
+                                       6.25% 96.875%, 3.125% 100%, 
+                                       0% 96.875%);
+}
+.checkTicketClosed {
+    margin-top: -120%;
+    height: 0;
+}
+.checkTicketContent {
+    margin: 91px auto 400px;
+    width: 100%;
+    max-width: calc(100% - 23%);
+    position: relative;
+
+    text-align: center;
+}
+
+.price h3 {
+    margin: 0 auto 24px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #A0A0A0;
+}
+.price h1 {
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 104px;
+    line-height: 112px;
+}
+
+.price h1 > span {
+    font-size: 56px;
+    line-height: 79px;
+}
+
+.info {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 64px;
+    font-feature-settings: 'ordn' on, 'case' on;
+    color: #00923A;
+}
